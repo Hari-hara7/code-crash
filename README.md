@@ -1,6 +1,6 @@
-# 🚀 Code Crash
+# ⚡ Code Crash
 
-A full-stack authentication and session management platform built with modern technologies like **Next.js**, **Prisma**, **PostgreSQL**, **Tailwind CSS**, and **NextAuth.js**. Designed to be scalable, secure, and developer-friendly.
+A modern full-stack authentication and login system built using cutting-edge technologies like **Next.js 15**, **Prisma ORM**, **NeonDB**, and styled with **Tailwind CSS** and **Lucide Icons**. Secure, scalable, and beautiful.
 
 <div align="center">
   <img src="https://img.shields.io/github/license/your-username/code-crash?style=flat-square" alt="License" />
@@ -10,45 +10,50 @@ A full-stack authentication and session management platform built with modern te
 
 ---
 
-## 📸 Preview
+## 🧩 Tech Stack
 
-![Preview](./public/preview.png)
+### 🌐 Frontend
+<p>
+  <img src="https://skillicons.dev/icons?i=nextjs,typescript,tailwind" />
+</p>
+
+- ✅ **Next.js 15** — App router, file-based routing, fast refresh
+- 🎨 **Tailwind CSS** — Utility-first styling
+- 🧠 **TypeScript** — Static typing for better development
+- 🎯 **Lucide Icons** — Clean, modern icon set
+
+### 🔧 Backend
+<p>
+  <img src="https://skillicons.dev/icons?i=prisma,postgres" />
+</p>
+
+- 🧬 **Prisma ORM** — Type-safe DB queries
+- 🗄️ **NeonDB** — Serverless PostgreSQL database
 
 ---
 
-## 🛠️ Tech Stack
+## 📸 Preview
 
-### Frontend:
-<p>
-  <img src="https://skillicons.dev/icons?i=nextjs,tailwind,js,html,css" />
-</p>
-
-### Backend:
-<p>
-  <img src="https://skillicons.dev/icons?i=nodejs,prisma,postgres,nextjs" />
-</p>
-
-### Auth:
-- 🔐 [NextAuth.js](https://next-auth.js.org) for secure authentication and session management
+![Preview Screenshot](./public/preview.png)
 
 ---
 
 ## ✨ Features
 
-- 🔑 Secure Login & Signup system
-- 📦 Integrated PostgreSQL with Prisma ORM
-- 🔄 Session-based Authentication with NextAuth
-- 📐 Tailwind CSS for clean and responsive UI
-- 🌐 Environment-based configuration support
-- 🌱 Seed support for initial admin/user creation
-- 📁 Scalable folder structure
-- ⚠ Error handling and protected routes
+- 🔒 Login system with secure credentials
+- 🧑‍💻 TypeScript support across frontend and backend
+- 📚 Prisma ORM integration for database operations
+- 🧠 NeonDB for serverless Postgres
+- ⚡ Fast, responsive UI using Tailwind CSS
+- 🎯 Lucide icons for clean, modern visuals
+- 🚫 Auth validation and error handling
+- 🪄 Clean project structure for scalability
 
 ---
 
-## 🚀 Getting Started
+## ⚙️ Setup Instructions
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/code-crash.git
