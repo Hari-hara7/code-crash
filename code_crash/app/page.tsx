@@ -60,7 +60,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="absolute bottom-4 text-xs text-green-700 opacity-60 z-10">
-        ⌨️ code-crash v1.0.0 — built with logic & caffeine ☕
+        ⌨️ code-crash v1.0.0 — built with logic &  caffeine ☕
       </footer>
     </main>
   );
