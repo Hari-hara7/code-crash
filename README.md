@@ -56,5 +56,5 @@ A modern full-stack authentication and login system built using cutting-edge tec
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/code-crash.git
+git clone [https://github.com/your-username/code-crash.git](https://github.com/Hari-hara7/code-crash.git)
 cd code-crash
