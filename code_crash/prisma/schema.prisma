@@ -1,0 +1,50 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  username  String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  sessions  Session[]
+  results   Result[]
+}
+
+model Session {
+  id        String   @id @default(cuid())
+  code      String   @unique
+  user1Id   String
+  user2Id   String?
+  user1     User     @relation("User1", fields: [user1Id], references: [id])
+  user2     User?    @relation("User2", fields: [user2Id], references: [id])
+  questions Question[]
+  createdAt DateTime @default(now())
+}
+
+model Question {
+  id           String   @id @default(cuid())
+  title        String
+  language     String
+  correctCode  String
+  sessionId    String
+  session      Session  @relation(fields: [sessionId], references: [id])
+}
+
+model Result {
+  id        String   @id @default(cuid())
+  userId    String
+  sessionId String
+  correct   Boolean
+  code      String
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id])
+  session   Session  @relation(fields: [sessionId], references: [id])
+}
