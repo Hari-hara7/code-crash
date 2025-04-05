@@ -2,11 +2,33 @@
 
 A modern full-stack authentication and login system built using cutting-edge technologies like **Next.js 15**, **Prisma ORM**, **NeonDB**, and styled with **Tailwind CSS** and **Lucide Icons**. Secure, scalable, and beautiful.
 
+# ⚡ Code Crash
+
+A modern full-stack authentication and login system built using cutting-edge technologies like **Next.js 15**, **Prisma ORM**, **NeonDB**, and styled with **Tailwind CSS** and **Lucide Icons**. Secure, scalable, and beautiful.
+
 <div align="center">
-  <img src="https://img.shields.io/github/license/your-username/code-crash?style=flat-square" alt="License" />
-  <img src="https://img.shields.io/github/languages/top/your-username/code-crash?style=flat-square" alt="Top Language" />
-  <img src="https://img.shields.io/github/last-commit/your-username/code-crash?style=flat-square" alt="Last Commit" />
+  <a href="https://github.com/your-username/code-crash/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/your-username/code-crash?style=flat-square" alt="License" />
+  </a>
+  <a href="https://github.com/your-username/code-crash">
+    <img src="https://img.shields.io/github/languages/top/your-username/code-crash?style=flat-square" alt="Top Language" />
+  </a>
+  <a href="https://github.com/your-username/code-crash/commits/main">
+    <img src="https://img.shields.io/github/last-commit/your-username/code-crash?style=flat-square" alt="Last Commit" />
+  </a>
 </div>
+
+---
+
+## 🧩 Tech Stack
+
+### 🌐 Frontend
+<p>
+  <img src="https://skillicons.dev/icons?i=nextjs,typescript,tailwind" />
+</p>
+
+- ✅ **Next.js 15** — App router, file-based routing, fast refresh
+- 🎨 **Tailwind CSS** — Utility-first styling
 
 ---
 
