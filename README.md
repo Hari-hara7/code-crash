@@ -19,16 +19,6 @@ A modern full-stack authentication and login system built using cutting-edge tec
 
 ---
 
-## 🧩 Tech Stack
-
-### 🌐 Frontend
-<p>
-  <img src="https://skillicons.dev/icons?i=nextjs,typescript,tailwind" />
-</p>
-
-- ✅ **Next.js 15** — App router, file-based routing, fast refresh
-- 🎨 **Tailwind CSS** — Utility-first styling
-
 ---
 
 ## 🧩 Tech Stack
