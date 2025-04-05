@@ -1,22 +1,21 @@
-# ⚡ Code Crash
 
-A modern full-stack authentication and login system built using cutting-edge technologies like **Next.js 15**, **Prisma ORM**, **NeonDB**, and styled with **Tailwind CSS** and **Lucide Icons**. Secure, scalable, and beautiful.
 
 # ⚡ Code Crash
 
 A modern full-stack authentication and login system built using cutting-edge technologies like **Next.js 15**, **Prisma ORM**, **NeonDB**, and styled with **Tailwind CSS** and **Lucide Icons**. Secure, scalable, and beautiful.
 
 <div align="center">
-  <a href="https://github.com/your-username/code-crash/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/your-username/code-crash?style=flat-square" alt="License" />
+  <a href="[https://github.com/hariharanath2005/code-crash/blob/main/LICENSE](https://github.com/Hari-hara7/code-crash.git)">
+    <img src="https://img.shields.io/github/license/hariharanath2005/code-crash?style=flat-square" alt="License" />
   </a>
-  <a href="https://github.com/your-username/code-crash">
-    <img src="https://img.shields.io/github/languages/top/your-username/code-crash?style=flat-square" alt="Top Language" />
+  <a href="[https://github.com/hariharanath2005/code-crash](https://github.com/Hari-hara7/code-crash.git)">
+    <img src="https://img.shields.io/github/languages/top/hariharanath2005/code-crash?style=flat-square" alt="Top Language" />
   </a>
-  <a href="https://github.com/your-username/code-crash/commits/main">
-    <img src="https://img.shields.io/github/last-commit/your-username/code-crash?style=flat-square" alt="Last Commit" />
+  <a href="[https://github.com/hariharanath2005/code-crash/commits/main](https://github.com/Hari-hara7/code-crash.git)">
+    <img src="https://img.shields.io/github/last-commit/hariharanath2005/code-crash?style=flat-square" alt="Last Commit" />
   </a>
 </div>
+
 
 ---
 
