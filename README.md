@@ -18,7 +18,23 @@ A modern full-stack authentication and login system built using cutting-edge tec
 
 
 ---
+## Login Details (For Testing)
 
+This project uses seeded login credentials for testing purposes. Make sure you've run the Prisma seed script before using the login.
+
+**Dummy Login Credentials:**
+
+- **Email:** `hari247@gmail.com`  
+- **Password:** `123456`
+
+> These credentials are seeded into the database using Prisma and can be used to log in as a test user.
+
+### How to Seed the Database
+
+If you haven't already seeded the database, run:
+
+```bash
+npx prisma db seed
 ---
 
 ## 🧩 Tech Stack
