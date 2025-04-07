@@ -33,7 +33,7 @@ This project uses seeded login credentials for testing purposes. Make sure you'v
 
 If you haven't already seeded the database, run:
 
-```bash
+
 npx prisma db seed
 ---
 
