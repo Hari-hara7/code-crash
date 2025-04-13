@@ -29,6 +29,6 @@ CodeCrash is a fast-paced coding platform where users can log in, receive a codi
 ## 🧪 Seeded Test Credentials
 
 ```bash
-Username: demo@codecrash.com
-Password: codecrash123
+Email: Hari247@gmail.com
+Password: 123456
 
