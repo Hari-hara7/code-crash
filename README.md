@@ -1,87 +1,50 @@
+# Sales Management System
 
-
-# ⚡ Code Crash
-
-A modern full-stack authentication and login system built using cutting-edge technologies like **Next.js 15**, **Prisma ORM**, **NeonDB**, and styled with **Tailwind CSS** and **Lucide Icons**. Secure, scalable, and beautiful.
+A web-based **Sales Management System** for managing sales records, employees, and automobiles. This project allows users to record sales, view the history of sales, and manage employees. It is built using PHP, MySQL, and Tailwind CSS for a clean and modern design.
 
 <div align="center">
-  <a href="[https://github.com/hariharanath2005/code-crash/blob/main/LICENSE](https://github.com/Hari-hara7/code-crash.git)">
-    <img src="https://img.shields.io/github/license/hariharanath2005/code-crash?style=flat-square" alt="License" />
+  <a href="https://github.com/Hari-hara7/sales-management-system/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/Hari-hara7/sales-management-system?style=flat-square" alt="License" />
   </a>
-  <a href="[https://github.com/hariharanath2005/code-crash](https://github.com/Hari-hara7/code-crash.git)">
-    <img src="https://img.shields.io/github/languages/top/hariharanath2005/code-crash?style=flat-square" alt="Top Language" />
+  <a href="https://github.com/Hari-hara7/sales-management-system">
+    <img src="https://img.shields.io/github/languages/top/Hari-hara7/sales-management-system?style=flat-square" alt="Top Language" />
   </a>
-  <a href="[https://github.com/hariharanath2005/code-crash/commits/main](https://github.com/Hari-hara7/code-crash.git)">
-    <img src="https://img.shields.io/github/last-commit/hariharanath2005/code-crash?style=flat-square" alt="Last Commit" />
+  <a href="https://github.com/Hari-hara7/sales-management-system/commits/main">
+    <img src="https://img.shields.io/github/last-commit/Hari-hara7/sales-management-system?style=flat-square" alt="Last Commit" />
   </a>
 </div>
 
+## Tech Stack
 
----
-## Login Details (For Testing)
+- **Frontend**:
+  - ![Tailwind CSS](https://img.icons8.com/ios/50/000000/tailwindcss.png) [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework.
+  - ![Feather Icons](https://img.icons8.com/ios/50/000000/feather.png) [Feather Icons](https://feathericons.com/) - Simple and customizable icons.
 
-This project uses seeded login credentials for testing purposes. Make sure you've run the Prisma seed script before using the login.
+- **Backend**:
+  - ![PHP](https://img.icons8.com/ios/50/000000/php.png) [PHP](https://www.php.net/) - Server-side scripting language.
 
-**Dummy Login Credentials:**
+- **Database**:
+  - ![MySQL](https://img.icons8.com/ios/50/000000/mysql-logo.png) [MySQL](https://www.mysql.com/) - Relational database management system.
 
-- **Email:** `hari247@gmail.com`  
-- **Password:** `123456`
+## Features
 
-> These credentials are seeded into the database using Prisma and can be used to log in as a test user.
+- Add new sales records with customer details, quantity, unit price, and total price.
+- View a history of all recorded sales.
+- Delete sales records from the system.
+- Simple and intuitive UI built with **Tailwind CSS**.
 
-### How to Seed the Database
+## Installation
 
-If you haven't already seeded the database, run:
+To get a local copy of the project, follow these steps:
 
+### Prerequisites
 
-npx prisma db seed
----
+- [PHP](https://www.php.net/downloads) - Make sure PHP is installed on your system.
+- [MySQL](https://dev.mysql.com/downloads/) - Install MySQL server.
+- A web server (e.g., Apache or Nginx) with PHP support.
 
-## 🧩 Tech Stack
-
-### 🌐 Frontend
-<p>
-  <img src="https://skillicons.dev/icons?i=nextjs,typescript,tailwind" />
-</p>
-
-- ✅ **Next.js 15** — App router, file-based routing, fast refresh
-- 🎨 **Tailwind CSS** — Utility-first styling
-- 🧠 **TypeScript** — Static typing for better development
-- 🎯 **Lucide Icons** — Clean, modern icon set
-
-### 🔧 Backend
-<p>
-  <img src="https://skillicons.dev/icons?i=prisma,postgres" />
-</p>
-
-- 🧬 **Prisma ORM** — Type-safe DB queries
-- 🗄️ **NeonDB** — Serverless PostgreSQL database
-
----
-
-## 📸 Preview
-
-![Preview Screenshot](./public/preview.png)
-
----
-
-## ✨ Features
-
-- 🔒 Login system with secure credentials
-- 🧑‍💻 TypeScript support across frontend and backend
-- 📚 Prisma ORM integration for database operations
-- 🧠 NeonDB for serverless Postgres
-- ⚡ Fast, responsive UI using Tailwind CSS
-- 🎯 Lucide icons for clean, modern visuals
-- 🚫 Auth validation and error handling
-- 🪄 Clean project structure for scalability
-
----
-
-## ⚙️ Setup Instructions
-
-### 1. Clone the Repository
+### Clone the repository
 
 ```bash
-git clone https://github.com/Hari-hara7/code-crash.git
-cd code-crash
+git clone https://github.com/Hari-hara7/sales-management-system.git
+cd sales-management-system
