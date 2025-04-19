@@ -65,6 +65,7 @@ export default function DashboardPage() {
         Support
       </Link>
       <Link href="/suggest" className="hover:underline text-sm">Suggest a Feature</Link>
+      <Link href="/tips" className="hover:underline">Tips & Tricks</Link>
 
     </div>
     <p className="text-xs text-green-600 opacity-70">

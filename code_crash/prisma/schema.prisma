@@ -59,3 +59,9 @@ model Suggestion {
   details   String
   createdAt DateTime @default(now())
 }
+model Tip {
+  id        String   @id @default(cuid())
+  content   String
+  author    String
+  createdAt DateTime @default(now())
+}
