@@ -36,3 +36,26 @@ model Submission {
   user       User      @relation(fields: [userId], references: [id], onDelete: Restrict, onUpdate: Cascade)
   question   Question  @relation(fields: [questionId], references: [id], onDelete: Restrict, onUpdate: Cascade)
 }
+model Feedback {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  message   String
+  createdAt DateTime @default(now())
+}
+model SupportRequest {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  subject   String
+  message   String
+  createdAt DateTime @default(now())
+}
+model Suggestion {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  title     String
+  details   String
+  createdAt DateTime @default(now())
+}
