@@ -1,14 +1,13 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Sparkles, Send, User, MessageSquareText, Edit2, Trash2, X, ThumbsUp } from 'lucide-react';
+import { Sparkles, Send, User, MessageSquareText, Edit2, Trash2, X } from 'lucide-react';
 
 type Tip = {
   id: string;
   content: string;
   author: string;
   createdAt: string;
-  votes: number;
 };
 
 export default function TipsPage() {
@@ -80,20 +79,6 @@ export default function TipsPage() {
     }
   };
 
-  const handleVote = async (tipId: string) => {
-    const userId = 'demo-user-id'; // Replace with real userId in production
-
-    const res = await fetch('/api/tips/vote', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ tipId, userId }),
-    });
-
-    if (res.ok) {
-      fetchTips();
-    }
-  };
-
   return (
     <div className="min-h-screen bg-black text-green-400 p-4 md:p-10 font-mono">
       <div className="max-w-4xl mx-auto space-y-10">
@@ -102,7 +87,6 @@ export default function TipsPage() {
           Tips & Tricks
         </h1>
 
-        {/* Form */}
         <form
           onSubmit={handleSubmit}
           className="space-y-4 bg-[#0f0f0f] border border-green-600 p-6 rounded-xl shadow-md"
@@ -167,7 +151,6 @@ export default function TipsPage() {
           {status && <p className="text-sm mt-2 text-green-400">{status}</p>}
         </form>
 
-        {/* Tips list */}
         <div className="space-y-6">
           <h2 className="text-2xl font-semibold text-green-500">🧠 Tips from the Community</h2>
           {tips.length === 0 ? (
@@ -183,15 +166,7 @@ export default function TipsPage() {
                   — {tip.author || 'Anonymous'} on{' '}
                   {new Date(tip.createdAt).toLocaleDateString()}
                 </div>
-                <div className="flex flex-wrap gap-4 text-sm text-green-400 mt-2 items-center">
-                  <button
-                    onClick={() => handleVote(tip.id)}
-                    className="flex items-center gap-1 hover:text-green-300 transition"
-                  >
-                    <ThumbsUp size={14} />
-                    Like ({tip.votes})
-                  </button>
-
+                <div className="flex gap-4 text-sm text-green-400">
                   <button
                     onClick={() => handleEdit(tip)}
                     className="flex items-center gap-1 hover:text-green-300 transition"

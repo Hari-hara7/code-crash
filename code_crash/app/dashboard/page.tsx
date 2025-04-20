@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Terminal, ChevronRightCircle } from "lucide-react";
 import Link from "next/link"; // ✅ Import Link
+import { MessageSquareHeart, HeartHandshake, Lightbulb, Sparkles } from 'lucide-react';
 
 export default function DashboardPage() {
   const [questions, setQuestions] = useState([]);
@@ -54,21 +55,33 @@ export default function DashboardPage() {
         ))}
       </section>
 
-      {/* 🧠 Footer */}
       <footer className="relative z-10 mt-20 px-4 py-8 text-center text-sm text-green-500 bg-black border-t border-green-900">
-  <div className="space-y-2">
-    <div className="flex justify-center gap-4 text-green-400">
-      <Link href="/feedback" className="hover:text-green-200 underline transition duration-150 ease-in-out">
-        💬 Give Feedback
+  <div className="space-y-4">
+    <div className="flex flex-wrap justify-center gap-6 text-green-400">
+      <Link
+        href="/feedback"
+        className="flex items-center gap-1 hover:text-green-200 transition duration-150"
+      >
+        <MessageSquareHeart size={16} /> Feedback
       </Link>
-      <Link href="/support" className="font-medium hover:underline transition duration-150 ease-in-out">
-        Support
+      <Link
+        href="/support"
+        className="flex items-center gap-1 hover:text-green-200 transition duration-150"
+      >
+        <HeartHandshake size={16} /> Support
       </Link>
-      <Link href="/suggest" className="hover:underline text-sm">Suggest a Feature</Link>
-      <Link href="/tips" className="hover:underline text-sm">Tips & Tricks</Link>
-
-   
-
+      <Link
+        href="/suggest"
+        className="flex items-center gap-1 hover:text-green-200 transition duration-150"
+      >
+        <Lightbulb size={16} /> Suggest Feature
+      </Link>
+      <Link
+        href="/tips"
+        className="flex items-center gap-1 hover:text-green-200 transition duration-150"
+      >
+        <Sparkles size={16} /> Tips & Tricks
+      </Link>
     </div>
     <p className="text-xs text-green-600 opacity-70">
       © 2025 <span className="font-semibold text-green-400">Code Crash</span> 🚀 — Built for coders who love the terminal.

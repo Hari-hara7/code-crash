@@ -8,13 +8,12 @@ datasource db {
 }
 
 model User {
-  id          String       @id @default(cuid())
-  name        String       @default("Anonymous")
-  email       String       @unique
-  password    String       @default("changeme123")
-  createdAt   DateTime     @default(now())
+  id        String       @id @default(cuid())
+  name      String       @default("Anonymous")
+  email     String       @unique
+  password  String       @default("changeme123")
+  createdAt DateTime     @default(now())
   submissions Submission[]
-  tipVotes    TipVote[]    // ✅ Add this line
 }
 
 model Question {
@@ -37,7 +36,6 @@ model Submission {
   user       User      @relation(fields: [userId], references: [id], onDelete: Restrict, onUpdate: Cascade)
   question   Question  @relation(fields: [questionId], references: [id], onDelete: Restrict, onUpdate: Cascade)
 }
-
 model Feedback {
   id        String   @id @default(cuid())
   name      String
@@ -45,7 +43,6 @@ model Feedback {
   message   String
   createdAt DateTime @default(now())
 }
-
 model SupportRequest {
   id        String   @id @default(cuid())
   name      String
@@ -54,7 +51,6 @@ model SupportRequest {
   message   String
   createdAt DateTime @default(now())
 }
-
 model Suggestion {
   id        String   @id @default(cuid())
   name      String
@@ -63,23 +59,9 @@ model Suggestion {
   details   String
   createdAt DateTime @default(now())
 }
-
 model Tip {
   id        String   @id @default(cuid())
   content   String
   author    String
   createdAt DateTime @default(now())
-  votes     TipVote[]  // ✅ Add this line
-}
-
-model TipVote {
-  id        String   @id @default(cuid())
-  tipId     String
-  userId    String
-  createdAt DateTime @default(now())
-
-  tip       Tip      @relation(fields: [tipId], references: [id], onDelete: Cascade)
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@unique([tipId, userId]) // prevents duplicate votes
 }
